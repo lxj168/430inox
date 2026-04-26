@@ -8,6 +8,7 @@
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
         body{font-family:Arial,Helvetica,sans-serif;color:#333;line-height:1.6}
+        img{max-width:100%;height:auto}
         a{text-decoration:none}
         .top-bar{background:#1a3a5c;color:#fff;padding:8px 20px;text-align:right;font-size:14px}
         .top-bar a{color:#FFC107;margin-left:20px}
@@ -15,7 +16,7 @@
         .logo{font-size:28px;font-weight:bold;color:#1a3a5c}
         .nav-links{display:flex;gap:25px;flex-wrap:wrap}
         .nav-links a{color:#333;font-weight:500}
-        .hero{background:linear-gradient(135deg,#1a3a5c 0%,#2c5282 100%);color:#fff;padding:80px 20px;text-align:center}
+        .hero{background:linear-gradient(rgba(26,58,92,0.8),rgba(26,58,92,0.8)),url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&q=80') center/cover;color:#fff;padding:100px 20px;text-align:center}
         .hero h1{font-size:48px;margin-bottom:15px}
         .hero .sub{font-size:20px;margin-bottom:30px;color:#FFC107}
         .btn{display:inline-block;padding:15px 35px;margin:10px;border-radius:5px;font-weight:bold;transition:0.3s}
@@ -26,13 +27,19 @@
         .section-title{text-align:center;font-size:36px;margin-bottom:50px;color:#1a3a5c}
         .grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
         .card{background:#f8f9fa;padding:30px;border-radius:8px;text-align:center;border:1px solid #e9ecef}
+        .card img{width:60px;margin-bottom:15px}
         .card h3{color:#1a3a5c;margin:15px 0;font-size:22px}
+        .flex-row{display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+        .flex-row .text{flex:1;min-width:300px}
+        .flex-row .img{flex:1;min-width:300px}
         .table{width:100%;border-collapse:collapse;margin:30px 0}
         .table th,.table td{border:1px solid #ddd;padding:12px;text-align:left}
         .table th{background:#1a3a5c;color:#fff}
         .table tr:nth-child(even){background:#f8f9fa}
-        .app-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
-        .app-card{background:#fff;border:1px solid #e9ecef;padding:25px;border-radius:8px}
+        .app-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:25px}
+        .app-card{background:#fff;border:1px solid #e9ecef;border-radius:8px;overflow:hidden}
+        .app-card img{width:100%;height:200px;object-fit:cover}
+        .app-card .content{padding:25px}
         .footer{background:#051a38;color:#9a94c2;padding:50px 20px}
         .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;max-width:1200px;margin:0 auto 30px}
         .footer h4{color:#fff;margin-bottom:15px}
@@ -55,6 +62,7 @@
             <a href="#products">Products</a>
             <a href="#advantage">Advantages</a>
             <a href="#application">Application</a>
+            <a href="#about">About Us</a>
             <a href="#contact">Contact</a>
         </div>
     </div>
@@ -71,18 +79,22 @@
         <h2 class="section-title">Why Choose Our 430 Secondary Grade</h2>
         <div class="grid-4">
             <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/126/126083.png" alt="Cost Saving">
                 <h3>30% Lower Cost</h3>
                 <p>Secondary grade with minor surface defects. Same chemical composition as prime grade. Perfect for non-critical applications.</p>
             </div>
             <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Quality">
                 <h3>Stable Quality</h3>
                 <p>Strict incoming inspection. Material test report provided. Thickness tolerance ±0.02mm.</p>
             </div>
             <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/869/869636.png" alt="Delivery">
                 <h3>Fast Delivery</h3>
                 <p>2000+ tons stock in Foshan warehouse. Ship to Haiphong Port within 7 days.</p>
             </div>
             <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2343/2343696.png" alt="Service">
                 <h3>48H Response</h3>
                 <p>Professional sales team. Reply your inquiry with price and lead time within 48 hours.</p>
             </div>
@@ -91,55 +103,79 @@
 
     <div class="section" id="products">
         <h2 class="section-title">430 Stainless Steel Specifications</h2>
-        <table class="table">
-            <tr>
-                <th>Grade</th>
-                <th>Thickness (mm)</th>
-                <th>Width (mm)</th>
-                <th>Surface</th>
-                <th>Application</th>
-            </tr>
-            <tr>
-                <td>430 Secondary</td>
-                <td>0.3 - 3.0</td>
-                <td>1000 / 1219 / 1500</td>
-                <td>2B, BA, No.4</td>
-                <td>Kitchenware, Home Appliance, Decoration</td>
-            </tr>
-            <tr>
-                <td>430 Prime</td>
-                <td>0.3 - 3.0</td>
-                <td>1000 / 1219 / 1500</td>
-                <td>2B, BA, No.4, HL</td>
-                <td>High-end Appliance, Elevator Panel</td>
-            </tr>
-        </table>
-        <p><strong>MOQ:</strong> 5 Tons | <strong>Payment:</strong> 30% TT in advance, 70% against copy of B/L | <strong>Packing:</strong> Standard export seaworthy packing</p>
+        <div class="flex-row">
+            <div class="text">
+                <table class="table">
+                    <tr>
+                        <th>Grade</th>
+                        <th>Thickness (mm)</th>
+                        <th>Width (mm)</th>
+                        <th>Surface</th>
+                    </tr>
+                    <tr>
+                        <td>430 Secondary</td>
+                        <td>0.3 - 3.0</td>
+                        <td>1000 / 1219 / 1500</td>
+                        <td>2B, BA, No.4</td>
+                    </tr>
+                    <tr>
+                        <td>430 Prime</td>
+                        <td>0.3 - 3.0</td>
+                        <td>1000 / 1219 / 1500</td>
+                        <td>2B, BA, No.4, HL</td>
+                    </tr>
+                </table>
+                <p><strong>MOQ:</strong> 5 Tons | <strong>Payment:</strong> 30% TT in advance, 70% against copy of B/L</p>
+                <p><strong>Packing:</strong> Standard export seaworthy packing, eye to sky or eye to wall</p>
+            </div>
+            <div class="img">
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80" alt="430 Stainless Steel Coil">
+            </div>
+        </div>
     </div>
 
     <div class="section" id="application">
         <h2 class="section-title">Application Areas</h2>
         <div class="app-grid">
             <div class="app-card">
-                <h3>Home Appliances</h3>
-                <p>Refrigerator panels, washing machine drums, microwave ovens, range hoods. 430 secondary grade reduces cost by 30%.</p>
+                <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&q=80" alt="Home Appliances">
+                <div class="content">
+                    <h3>Home Appliances</h3>
+                    <p>Refrigerator panels, washing machine drums, microwave ovens, range hoods. 430 secondary grade reduces cost by 30%.</p>
+                </div>
             </div>
             <div class="app-card">
-                <h3>Kitchenware</h3>
-                <p>Sinks, tableware, pots, cutlery. Good corrosion resistance and formability.</p>
+                <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=600&q=80" alt="Kitchenware">
+                <div class="content">
+                    <h3>Kitchenware & Tableware</h3>
+                    <p>Sinks, pots, cutlery, kitchen utensils. Good corrosion resistance and formability for deep drawing.</p>
+                </div>
             </div>
             <div class="app-card">
-                <h3>Architecture Decoration</h3>
-                <p>Elevator panels, building cladding, indoor decoration. Surface No.4 and HL available.</p>
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=80" alt="Architecture">
+                <div class="content">
+                    <h3>Architecture Decoration</h3>
+                    <p>Elevator panels, building cladding, indoor decoration. Surface No.4 and HL available for aesthetic use.</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="about">
         <h2 class="section-title">About Foshan 430 Stainless Steel Co., Ltd</h2>
-        <p>We are a professional supplier of stainless steel based in Foshan, China. Specializing in 430, 410, 201, 304 grades. Annual export volume 20,000+ tons. Main markets: Vietnam, Thailand, India, Middle East.</p>
-        <p><strong>Factory Address:</strong> Foshan, Guangdong, China</p>
-        <p><strong>Export Experience:</strong> 10+ Years | <strong>Main Port:</strong> Shenzhen / Guangzhou</p>
+        <div class="flex-row">
+            <div class="img">
+                <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80" alt="Stainless Steel Factory">
+            </div>
+            <div class="text">
+                <p>We are a professional supplier of stainless steel based in Foshan, China. Specializing in 430, 410, 201, 304 grades.</p>
+                <p><strong>Annual Export Volume:</strong> 20,000+ Tons</p>
+                <p><strong>Main Markets:</strong> Vietnam, Thailand, India, Middle East, South America</p>
+                <p><strong>Factory Address:</strong> Foshan, Guangdong, China</p>
+                <p><strong>Main Port:</strong> Shenzhen / Guangzhou | <strong>Delivery Time:</strong> 7-15 days</p>
+                <p>We provide material test reports, SGS inspection, and third-party quality control. Welcome to visit our factory.</p>
+            </div>
+        </div>
     </div>
 
     <div class="footer" id="contact">
