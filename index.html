@@ -4,290 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>430 Stainless Steel Manufacturer | Secondary Grade Coil Sheet | 430inox.com</title>
-    <meta name="description" content="Professional 430 stainless steel manufacturer in Foshan. Secondary grade 30% cost saving. Thickness 0.3-3.0mm. 2B BA 8K surface. Export to Vietnam.">
+    <meta name="description" content="Professional 430 stainless steel manufacturer in Foshan. Save 30% cost with secondary grade. 2B BA 8K surface.">
     <style>
+        /* 基础样式优化 */
         *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#333;line-height:1.6;background:#fff}
+        body{font-family:"Helvetica Neue",Arial,sans-serif;color:#333;line-height:1.6;background:#fff}
         img{max-width:100%;height:auto;display:block}
-        a{text-decoration:none;color:inherit}
+        a{text-decoration:none;transition: 0.3s}
         .container{max-width:1200px;margin:0 auto;padding:0 15px}
+
         /* Top Bar */
         .topbar{background:#003366;color:#fff;font-size:13px;padding:8px 0}
         .topbar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
         .topbar a{color:#ffcc00;margin-left:15px}
-        /* Header */
-        .header{background:#fff;border-bottom:1px solid #ddd;position:sticky;top:0;z-index:999}
+
+        /* Header - 仿 iwoosan 简洁风 */
+        .header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:999}
         .header .container{display:flex;justify-content:space-between;align-items:center;padding:15px}
-        .logo{font-size:26px;font-weight:700;color:#003366}
+        .logo{font-size:26px;font-weight:800;color:#003366}
         .logo span{color:#ff9900}
-        .nav{display:flex;gap:30px}
-        .nav a{font-weight:500;font-size:15px;color:#333;padding:10px 0;border-bottom:2px solid transparent}
-        .nav a:hover{color:#003366;border-color:#ff9900}
-        /* Hero */
-        .hero{position:relative;height:500px;display:flex;align-items:center;color:#fff;text-align:center}
-        .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(0,51,102,0.7),rgba(0,51,102,0.7)),url('warehouse-coils.jpg') center/cover;z-index:-1}
-        .hero h1{font-size:48px;font-weight:700;margin-bottom:15px}
-        .hero p{font-size:18px;margin-bottom:30px}
-        .btn{display:inline-block;padding:12px 30px;margin:5px;border-radius:3px;font-weight:600;text-transform:uppercase;font-size:14px}
-        .btn-primary{background:#ff9900;color:#fff}
+        .nav{display:flex;gap:25px}
+        .nav a{font-weight:600;font-size:15px;color:#333}
+        .nav a:hover{color:#ff9900}
+
+        /* Hero Section - 适配 1920x700 背景图 */
+        .hero {
+            position: relative;
+            height: 70vh;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            /* 核心：匹配 hero-bg.webp */
+            background: linear-gradient(rgba(0,51,102,0.5), rgba(0,26,51,0.7)), 
+                        url('hero-bg.webp') center/cover no-repeat;
+            z-index: -1;
+        }
+        .hero h1{font-size: clamp(32px, 5vw, 52px); font-weight:800; margin-bottom:15px}
+        .hero p{font-size: 20px; background: rgba(255,153,0,0.8); display:inline-block; padding:5px 15px; margin-bottom:30px}
+        .btn{display:inline-block;padding:12px 35px;border-radius:3px;font-weight:700;text-transform:uppercase}
+        .btn-primary{background:#ff9900;color:#fff;margin-right:10px}
         .btn-outline{border:2px solid #fff;color:#fff}
-        /* Section */
-        .section{padding:70px 0}
+
+        /* Section 通用 */
+        .section{padding:80px 0}
         .section-title{text-align:center;margin-bottom:50px}
-        .section-title h2{font-size:36px;color:#003366;font-weight:700;position:relative;display:inline-block;padding-bottom:15px}
-        .section-title h2::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:80px;height:3px;background:#ff9900}
-        .section-title p{color:#666;margin-top:10px}
-        /* Features */
-        .features{background:#f5f5f5}
-        .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
-        .feature-box{text-align:center;background:#fff;padding:40px 20px;border:1px solid #eee;transition:0.3s}
-        .feature-box:hover{box-shadow:0 5px 20px rgba(0,0,0,0.1);transform:translateY(-5px)}
-        .feature-box img{width:50px;margin:0 auto 20px}
-        .feature-box h3{font-size:20px;color:#003366;margin-bottom:10px}
-        /* About */
+        .section-title h2{font-size:36px;color:#003366;margin-bottom:15px;position:relative;display:inline-block;padding-bottom:10px}
+        .section-title h2::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60px;height:3px;background:#ff9900}
+
+        /* About Us - 适配 factory-loading.webp */
         .about-row{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-        .about-row img{border-radius:5px}
-        .about-row h3{font-size:28px;color:#003366;margin-bottom:20px}
-        .about-row ul{list-style:none;margin-top:20px}
-        .about-row ul li{padding:8px 0;padding-left:25px;position:relative}
-        .about-row ul li::before{content:'✓';position:absolute;left:0;color:#ff9900;font-weight:bold}
-        /* Products Table */
-        .product-table{width:100%;border-collapse:collapse;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.05)}
-        .product-table th{background:#003366;color:#fff;padding:15px;text-align:left;font-weight:600}
-        .product-table td{padding:15px;border-bottom:1px solid #eee}
-        .product-table tr:hover{background:#f9f9f9}
-        /* Gallery */
-        .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px;margin-top:40px}
-        .gallery-item{position:relative;overflow:hidden;border-radius:5px}
-        .gallery-item img{width:100%;height:250px;object-fit:cover;transition:0.3s}
-        .gallery-item:hover img{transform:scale(1.1)}
-        .gallery-item .caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.8));color:#fff;padding:20px 15px}
-        /* Footer */
-        .footer{background:#001a33;color:#aaa;padding:60px 0 20px;font-size:14px}
-        .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
-        .footer h4{color:#fff;font-size:18px;margin-bottom:20px}
-        .footer ul{list-style:none}
-        .footer ul li{padding:6px 0}
-        .footer ul li a{color:#aaa}
-        .footer ul li a:hover{color:#ff9900}
-        .footer-bottom{text-align:center;padding-top:20px;border-top:1px solid #003366;color:#666}
-        .whatsapp-float{position:fixed;bottom:25px;right:25px;background:#25D366;color:#fff;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 4px 12px rgba(0,0,0,0.3);z-index:999}
+        .about-row img{border-radius:8px;box-shadow: 0 10px 30px rgba(0,0,0,0.1)}
+
+        /* Gallery - 适配 1:1 比例产品图 */
+        .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+        .gallery-item{background:#fff;border:1px solid #eee;border-radius:8px;overflow:hidden;transition:0.3s}
+        .gallery-item:hover{transform:translateY(-10px);box-shadow:0 15px 30px rgba(0,0,0,0.1)}
+        .gallery-item img{width:100%;height:280px;object-fit:cover} /* 强制对齐尺寸 */
+        .gallery-item .info{padding:20px;text-align:center}
+        .gallery-item h4{color:#003366;font-size:18px}
+
+        /* 移动端适配 */
         @media(max-width:768px){
-            .nav{display:none}.hero h1{font-size:32px}.about-row{grid-template-columns:1fr}
-            .footer-grid{grid-template-columns:1fr}.section{padding:50px 0}
+            .nav{display:none}
+            .about-row{grid-template-columns:1fr}
+            .hero h1{font-size:32px}
         }
     </style>
 </head>
 <body>
-    <!-- Top Bar -->
     <div class="topbar">
         <div class="container">
-            <div>Welcome to Foshan 430 Stainless Steel Co., Ltd</div>
-            <div>
-                <a href="tel:+8618922488211">Tel: +86 189 2248 8211</a>
-                <a href="mailto:sales@430inox.com">Email: sales@430inox.com</a>
-            </div>
+            <div>Foshan Professional 430 Stainless Steel Factory</div>
+            <div><a href="https://wa.me/8618922488211">WhatsApp: +86 189 2248 8211</a></div>
         </div>
     </div>
 
-    <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="logo">430<span>INOX</span>.COM</div>
+            <div class="logo">430<span>INOX</span></div>
             <nav class="nav">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
+                <a href="#about">Company</a>
                 <a href="#products">Products</a>
-                <a href="#advantages">Advantages</a>
                 <a href="#factory">Factory</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="container">
-            <h1>Professional 430 Stainless Steel Manufacturer</h1>
-            <p>Secondary Grade | 30% Cost Saving | Thickness 0.3-3.0mm | 2B BA 8K Surface | Slitting Available</p>
-            <a href="https://wa.me/8618922488211?text=Hello from 430inox.com" class="btn btn-primary" target="_blank">Chat on WhatsApp</a>
-            <a href="mailto:sales@430inox.com?subject=430 Stainless Steel Inquiry" class="btn btn-outline">Get Quote</a>
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section class="section features" id="advantages">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Advantages</h2>
-                <p>Why choose us as your 430 stainless steel supplier</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-box">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cost" loading="lazy">
-                    <h3>Cost Effective</h3>
-                    <p>Secondary grade offers 30% cost saving vs prime. Same chemical composition, ideal for non-decorative parts.</p>
-                </div>
-                <div class="feature-box">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Quality" loading="lazy">
-                    <h3>Quality Assured</h3>
-                    <p>Raw material from top Chinese mills. MTC provided. Thickness tolerance ±0.02mm. Third-party inspection accepted.</p>
-                </div>
-                <div class="feature-box">
-                    <img src="https://cdn-icons-png.flaticon.com/512/869/869636.png" alt="Stock" loading="lazy">
-                    <h3>Large Stock</h3>
-                    <p>2000+ tons stock in Foshan warehouse. Common sizes ready for fast delivery within 7 days.</p>
-                </div>
-                <div class="feature-box">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2830/2830284.png" alt="Processing" loading="lazy">
-                    <h3>Processing Service</h3>
-                    <p>Slitting, cutting, surface polishing available. Width and length customized as per your requirement.</p>
-                </div>
+            <h1>Premium 430 Stainless Steel Coils</h1>
+            <p>Save 30% Cost with High-Quality Secondary Grade</p>
+            <div>
+                <a href="https://wa.me/8618922488211" class="btn btn-primary">Get Free Quote</a>
+                <a href="#products" class="btn btn-outline">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- About -->
     <section class="section" id="about">
         <div class="container">
-            <div class="section-title">
-                <h2>About Us</h2>
-                <p>15+ years experience in stainless steel export</p>
-            </div>
             <div class="about-row">
+                <img src="factory-loading.webp" alt="Stainless Steel Factory Loading" loading="lazy">
                 <div>
-                    <img src="crane-loading.jpg" alt="Factory Loading" loading="lazy">
-                </div>
-                <div>
-                    <h3>Foshan 430 Stainless Steel Co., Ltd</h3>
-                    <p>We are a professional stainless steel manufacturer and exporter based in Foshan, China. Specializing in 430, 410, 201, 304 grades for over 15 years.</p>
-                    <ul>
-                        <li>Annual Export Volume: 20,000+ Tons</li>
-                        <li>Main Markets: Vietnam, Thailand, India, Middle East, South America</li>
-                        <li>Certificates: ISO 9001, MTC, SGS</li>
-                        <li>Main Port: Shenzhen / Guangzhou</li>
-                        <li>Payment Terms: T/T, L/C at sight</li>
+                    <div class="section-title" style="text-align:left"><h2>Why Choose Us?</h2></div>
+                    <p>Over 15 years of experience in 430 stainless steel exporting. We specialize in providing cost-effective solutions for home appliances and decoration industries.</p>
+                    <ul style="list-style:none; margin-top:20px">
+                        <li style="margin-bottom:10px">✅ 2000+ Tons Regular Stock</li>
+                        <li style="margin-bottom:10px">✅ Strict Quality Inspection</li>
+                        <li style="margin-bottom:10px">✅ Precision Slitting Service</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products -->
-    <section class="section" style="background:#f5f5f5" id="products">
+    <section class="section" id="factory" style="background:#f9f9f9">
         <div class="container">
             <div class="section-title">
-                <h2>Product Range</h2>
-                <p>430 Stainless Steel Coil, Sheet, Strip</p>
-            </div>
-            <table class="product-table">
-                <thead>
-                    <tr>
-                        <th>Grade</th>
-                        <th>Type</th>
-                        <th>Thickness Range</th>
-                        <th>Surface Finish</th>
-                        <th>Standard</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>SUS 430</strong></td>
-                        <td>Secondary Grade</td>
-                        <td>0.3mm - 3.0mm</td>
-                        <td>2B, BA, No.4</td>
-                        <td>ASTM A240, JIS G4305</td>
-                    </tr>
-                    <tr>
-                        <td><strong>SUS 430</strong></td>
-                        <td>Prime Grade</td>
-                        <td>0.3mm - 3.0mm</td>
-                        <td>2B, BA, No.4, HL, 8K Mirror</td>
-                        <td>ASTM A240, JIS G4305</td>
-                    </tr>
-                    <tr>
-                        <td><strong>SUS 410</strong></td>
-                        <td>Secondary/Prime</td>
-                        <td>0.3mm - 3.0mm</td>
-                        <td>2B, BA</td>
-                        <td>ASTM A240</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p style="margin-top:20px;text-align:center"><strong>MOQ: 5 Tons | Slitting & Cutting Service Available | Customized Size Accepted</strong></p>
-        </div>
-    </section>
-
-    <!-- Factory Gallery -->
-    <section class="section" id="factory">
-        <div class="container">
-            <div class="section-title">
-                <h2>Factory & Stock</h2>
-                <p>Real photos from our warehouse and production line</p>
+                <h2>Product & Stock Gallery</h2>
+                <p>Real photos from our Foshan warehouse</p>
             </div>
             <div class="gallery">
                 <div class="gallery-item">
-                    <img src="sheet-stack-430.jpg" alt="430 Stainless Steel Stock" loading="lazy">
-                    <div class="caption"><h4>430 Coil Stock</h4></div>
+                    <img src="430-stock.webp" alt="430 Stainless Steel Sheets" loading="lazy">
+                    <div class="info"><h4>430 Prime/Secondary Stock</h4></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="sheet-blue-film.jpg" alt="Blue Film Sheets" loading="lazy">
-                    <div class="caption"><h4>PVC Film Sheets</h4></div>
+                    <img src="pvc-sheets.webp" alt="Blue PVC Film Sheets" loading="lazy">
+                    <div class="info"><h4>PVC Film Protected Surface</h4></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="material-cert.jpg" alt="Mill Test Certificate" loading="lazy">
-                    <div class="caption"><h4>Mill Certificate</h4></div>
+                    <img src="8k-mirror.webp" alt="8K Mirror Surface" loading="lazy">
+                    <div class="info"><h4>High-End 8K Mirror Finish</h4></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="mirror-8k.jpg" alt="8K Mirror Finish" loading="lazy">
-                    <div class="caption"><h4>8K Mirror Surface</h4></div>
+                    <img src="430-mtc.webp" alt="Material Certificate" loading="lazy">
+                    <div class="info"><h4>Mill Test Certificate (MTC)</h4></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="thickness-check.webp" alt="Thickness Inspection" loading="lazy">
+                    <div class="info"><h4>Precision Thickness Control</h4></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <h4>About 430INOX.COM</h4>
-                    <p>Foshan 430 Stainless Steel Co., Ltd is a professional manufacturer of 430 stainless steel coil and sheet. We provide cost-effective secondary grade for home appliance, kitchenware and decoration industries.</p>
-                </div>
-                <div>
-                    <h4>Products</h4>
-                    <ul>
-                        <li><a href="#products">430 Stainless Steel Coil</a></li>
-                        <li><a href="#products">430 Stainless Steel Sheet</a></li>
-                        <li><a href="#products">430 Stainless Steel Strip</a></li>
-                        <li><a href="#products">8K Mirror Sheet</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#advantages">Why Choose Us</a></li>
-                        <li><a href="#factory">Factory Tour</a></li>
-                        <li><a href="mailto:sales@430inox.com">Send Inquiry</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li>Tel: <a href="tel:+8618922488211">+86 189 2248 8211</a></li>
-                        <li>WhatsApp: <a href="https://wa.me/8618922488211" target="_blank">+86 189 2248 8211</a></li>
-                        <li>Email: <a href="mailto:sales@430inox.com">sales@430inox.com</a></li>
-                        <li>Address: Foshan, Guangdong, China</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Copyright © 2026 Foshan 430 Stainless Steel Co., Ltd. All Rights Reserved. | <a href="https://430inox.com" style="color:#aaa">430inox.com</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <a href="https://wa.me/8618922488211?text=Hello, I visited 430inox.com and need 430 stainless steel quote" class="whatsapp-float" target="_blank">💬</a>
-</body>
+    </body>
 </html>
